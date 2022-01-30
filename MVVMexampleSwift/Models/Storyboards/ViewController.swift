@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bindViewModel()
+        
     }
     
     func bindViewModel() {
@@ -29,6 +30,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func loginButton(_ sender: Any) {
+        viewModel.userButtonPressd(login: (loginField.text ?? ""), password: (passwordField.text ?? ""))
     }
 }
 

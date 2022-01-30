@@ -8,12 +8,27 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var loginField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var labelStatus: UILabel!
+    
+    var viewModel = ViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        bindViewModel()
+    }
+    
+    func bindViewModel() {
+        viewModel.statusTextInfo.bind { (statusTextInfo) in
+            DispatchQueue.main.async {
+                self.labelStatus.text = statusTextInfo
+            }
+        }
     }
 
 
+    @IBAction func loginButton(_ sender: Any) {
+    }
 }
 

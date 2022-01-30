@@ -13,6 +13,9 @@
 		CB06149127A704D0009EBCA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB06148F27A704D0009EBCA6 /* Main.storyboard */; };
 		CB06149327A704D2009EBCA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB06149227A704D2009EBCA6 /* Assets.xcassets */; };
 		CB06149627A704D2009EBCA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB06149427A704D2009EBCA6 /* LaunchScreen.storyboard */; };
+		CB0614A227A70950009EBCA6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0614A127A70950009EBCA6 /* User.swift */; };
+		CB0614A427A70B43009EBCA6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0614A327A70B43009EBCA6 /* ViewModel.swift */; };
+		CB0614A727A70C19009EBCA6 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0614A627A70C19009EBCA6 /* Dynamic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		CB06149227A704D2009EBCA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB06149527A704D2009EBCA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB06149727A704D2009EBCA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB0614A127A70950009EBCA6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CB0614A327A70B43009EBCA6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CB0614A627A70C19009EBCA6 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,59 @@
 		CB06148827A704D0009EBCA6 /* MVVMexampleSwift */ = {
 			isa = PBXGroup;
 			children = (
+				CB06149F27A70872009EBCA6 /* ViewModels */,
+				CB06149E27A70840009EBCA6 /* Views */,
+				CB06149D27A70826009EBCA6 /* Models */,
 				CB06148927A704D0009EBCA6 /* AppDelegate.swift */,
 				CB06148B27A704D0009EBCA6 /* SceneDelegate.swift */,
-				CB06148D27A704D0009EBCA6 /* ViewController.swift */,
 				CB06148F27A704D0009EBCA6 /* Main.storyboard */,
 				CB06149227A704D2009EBCA6 /* Assets.xcassets */,
-				CB06149427A704D2009EBCA6 /* LaunchScreen.storyboard */,
 				CB06149727A704D2009EBCA6 /* Info.plist */,
 			);
 			path = MVVMexampleSwift;
+			sourceTree = "<group>";
+		};
+		CB06149D27A70826009EBCA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB0614A127A70950009EBCA6 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB06149E27A70840009EBCA6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB0614A027A708EC009EBCA6 /* Storyboards */,
+			);
+			name = Views;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB06149F27A70872009EBCA6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CB0614A527A70BC2009EBCA6 /* Bindings */,
+				CB0614A327A70B43009EBCA6 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CB0614A027A708EC009EBCA6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CB06149427A704D2009EBCA6 /* LaunchScreen.storyboard */,
+				CB06148D27A704D0009EBCA6 /* ViewController.swift */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CB0614A527A70BC2009EBCA6 /* Bindings */ = {
+			isa = PBXGroup;
+			children = (
+				CB0614A627A70C19009EBCA6 /* Dynamic.swift */,
+			);
+			path = Bindings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +188,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB0614A427A70B43009EBCA6 /* ViewModel.swift in Sources */,
+				CB0614A227A70950009EBCA6 /* User.swift in Sources */,
 				CB06148E27A704D0009EBCA6 /* ViewController.swift in Sources */,
+				CB0614A727A70C19009EBCA6 /* Dynamic.swift in Sources */,
 				CB06148A27A704D0009EBCA6 /* AppDelegate.swift in Sources */,
 				CB06148C27A704D0009EBCA6 /* SceneDelegate.swift in Sources */,
 			);

@@ -17,6 +17,7 @@
 		CB0614A727A70C19009EBCA6 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0614A627A70C19009EBCA6 /* Dynamic.swift */; };
 		CB86AA7D27A9BC1600A1E221 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86AA7C27A9BC1500A1E221 /* Coordinator.swift */; };
 		CB86AA7F27A9BE0900A1E221 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86AA7E27A9BE0900A1E221 /* AppCoordinator.swift */; };
+		CB86AA8227A9C0B800A1E221 /* StoryBoardControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86AA8127A9C0B800A1E221 /* StoryBoardControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CB0614A627A70C19009EBCA6 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		CB86AA7C27A9BC1500A1E221 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		CB86AA7E27A9BE0900A1E221 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		CB86AA8127A9C0B800A1E221 /* StoryBoardControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoardControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		CB06149E27A70840009EBCA6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CB86AA8027A9C07600A1E221 /* ProtocolsViews */,
 				CB0614A027A708EC009EBCA6 /* Storyboards */,
 			);
 			name = Views;
@@ -134,6 +137,14 @@
 				CB86AA7C27A9BC1500A1E221 /* Coordinator.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CB86AA8027A9C07600A1E221 /* ProtocolsViews */ = {
+			isa = PBXGroup;
+			children = (
+				CB86AA8127A9C0B800A1E221 /* StoryBoardControl.swift */,
+			);
+			path = ProtocolsViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +222,7 @@
 				CB0614A227A70950009EBCA6 /* User.swift in Sources */,
 				CB86AA7D27A9BC1600A1E221 /* Coordinator.swift in Sources */,
 				CB06148E27A704D0009EBCA6 /* LoginViewController.swift in Sources */,
+				CB86AA8227A9C0B800A1E221 /* StoryBoardControl.swift in Sources */,
 				CB0614A727A70C19009EBCA6 /* Dynamic.swift in Sources */,
 				CB06148A27A704D0009EBCA6 /* AppDelegate.swift in Sources */,
 				CB86AA7F27A9BE0900A1E221 /* AppCoordinator.swift in Sources */,

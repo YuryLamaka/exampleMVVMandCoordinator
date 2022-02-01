@@ -12,12 +12,24 @@ class Appcoordinator: Coordinator {
     
     var isLoggedIn: Bool = false
     
+    init(navigationController: UINavigationController) {
+           self.navigationController = navigationController
+       }
+    
     func start() {
-         
+        if isLoggedIn {
+            showMain()
+        } else {
+            showLogin()
+        }
     }
     
-    init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
+    func showLogin() {
+        
+    }
+   
+    func showMain() {
+        
     }
     
 }

@@ -18,6 +18,7 @@
 		CB86AA7D27A9BC1600A1E221 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86AA7C27A9BC1500A1E221 /* Coordinator.swift */; };
 		CB86AA7F27A9BE0900A1E221 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86AA7E27A9BE0900A1E221 /* AppCoordinator.swift */; };
 		CB86AA8227A9C0B800A1E221 /* StoryBoardControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86AA8127A9C0B800A1E221 /* StoryBoardControl.swift */; };
+		CB86AA8427A9CA1A00A1E221 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86AA8327A9CA1A00A1E221 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		CB86AA7C27A9BC1500A1E221 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		CB86AA7E27A9BE0900A1E221 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		CB86AA8127A9C0B800A1E221 /* StoryBoardControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoardControl.swift; sourceTree = "<group>"; };
+		CB86AA8327A9CA1A00A1E221 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				CB06149427A704D2009EBCA6 /* LaunchScreen.storyboard */,
 				CB06148D27A704D0009EBCA6 /* LoginViewController.swift */,
+				CB86AA8327A9CA1A00A1E221 /* MainViewController.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				CB06148E27A704D0009EBCA6 /* LoginViewController.swift in Sources */,
 				CB86AA8227A9C0B800A1E221 /* StoryBoardControl.swift in Sources */,
 				CB0614A727A70C19009EBCA6 /* Dynamic.swift in Sources */,
+				CB86AA8427A9CA1A00A1E221 /* MainViewController.swift in Sources */,
 				CB06148A27A704D0009EBCA6 /* AppDelegate.swift in Sources */,
 				CB86AA7F27A9BE0900A1E221 /* AppCoordinator.swift in Sources */,
 			);

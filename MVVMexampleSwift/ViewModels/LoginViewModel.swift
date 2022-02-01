@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ViewModel {
+class LoginViewModel {
     var statusTextInfo = Dynamic("")
     
     func userButtonPressd(login: String, password: String) {

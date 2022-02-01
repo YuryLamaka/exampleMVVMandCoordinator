@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CB06148A27A704D0009EBCA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB06148927A704D0009EBCA6 /* AppDelegate.swift */; };
-		CB06148C27A704D0009EBCA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB06148B27A704D0009EBCA6 /* SceneDelegate.swift */; };
 		CB06148E27A704D0009EBCA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB06148D27A704D0009EBCA6 /* ViewController.swift */; };
 		CB06149127A704D0009EBCA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB06148F27A704D0009EBCA6 /* Main.storyboard */; };
 		CB06149327A704D2009EBCA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB06149227A704D2009EBCA6 /* Assets.xcassets */; };
@@ -21,7 +20,6 @@
 /* Begin PBXFileReference section */
 		CB06148627A704D0009EBCA6 /* MVVMexampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMexampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB06148927A704D0009EBCA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB06148B27A704D0009EBCA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CB06148D27A704D0009EBCA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB06149027A704D0009EBCA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB06149227A704D2009EBCA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,7 +64,6 @@
 				CB06149E27A70840009EBCA6 /* Views */,
 				CB06149D27A70826009EBCA6 /* Models */,
 				CB06148927A704D0009EBCA6 /* AppDelegate.swift */,
-				CB06148B27A704D0009EBCA6 /* SceneDelegate.swift */,
 				CB06148F27A704D0009EBCA6 /* Main.storyboard */,
 				CB06149227A704D2009EBCA6 /* Assets.xcassets */,
 				CB06149727A704D2009EBCA6 /* Info.plist */,
@@ -193,7 +190,6 @@
 				CB06148E27A704D0009EBCA6 /* ViewController.swift in Sources */,
 				CB0614A727A70C19009EBCA6 /* Dynamic.swift in Sources */,
 				CB06148A27A704D0009EBCA6 /* AppDelegate.swift in Sources */,
-				CB06148C27A704D0009EBCA6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

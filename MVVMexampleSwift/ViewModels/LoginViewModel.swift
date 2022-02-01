@@ -10,6 +10,9 @@ import Foundation
 class LoginViewModel {
     var statusTextInfo = Dynamic("")
     
+    var isLoggedIn: Bool = false
+
+    
     func userButtonPressd(login: String, password: String) {
         if login != User.logins[0].login || password != User.logins[0].password {
             statusTextInfo.value = "Log is failed."

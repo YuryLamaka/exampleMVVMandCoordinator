@@ -7,12 +7,14 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, StoryBoardControl {
     @IBOutlet weak var loginField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var labelStatus: UILabel!
     
-    var viewModel = LoginViewModel()
+    var viewModel: LoginViewModel?
+    
+    var coordinator: Appcoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +23,7 @@ class LoginViewController: UIViewController {
     }
     
     func bindViewModel() {
-        viewModel.statusTextInfo.bind { (statusTextInfo) in
+        viewModel?.statusTextInfo.bind { (statusTextInfo) in
             DispatchQueue.main.async {
                 self.labelStatus.text = statusTextInfo
             }
@@ -30,7 +32,7 @@ class LoginViewController: UIViewController {
 
 
     @IBAction func loginButton(_ sender: Any) {
-        viewModel.userButtonPressd(login: (loginField.text ?? ""), password: (passwordField.text ?? ""))
+        viewModel?.userButtonPressd(login: (loginField.text ?? ""), password: (passwordField.text ?? ""))
     }
 }
 

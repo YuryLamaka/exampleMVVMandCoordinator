@@ -25,7 +25,11 @@ class Appcoordinator: Coordinator {
     }
     
     func showLogin() {
-        
+        let viewController = LoginViewController.createObject()
+        viewController.coordinator = self
+        viewController.viewModel = LoginViewModel()
+        viewController.viewModel?.isLoggedIn = isLoggedIn
+        navigationController.pushViewController(viewController, animated: true)
     }
    
     func showMain() {

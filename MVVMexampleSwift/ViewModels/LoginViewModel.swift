@@ -16,8 +16,10 @@ class LoginViewModel {
     func userButtonPressd(login: String, password: String) {
         if login != User.logins[0].login || password != User.logins[0].password {
             statusTextInfo.value = "Log is failed."
+            isLoggedIn = false
         } else {
             statusTextInfo.value = "Logged in."
+            isLoggedIn = true
         }
     }
 }

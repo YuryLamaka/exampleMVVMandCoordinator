@@ -13,12 +13,12 @@ class Appcoordinator: Coordinator {
     var isLoggedIn: Bool = false
     
     init(navigationController: UINavigationController) {
-           self.navigationController = navigationController
-       }
+        self.navigationController = navigationController
+    }
     
     func start() {
         if isLoggedIn {
-            showMain()
+            showMain(login: User.logins[0].login!)
         } else {
             showLogin()
         }
@@ -32,8 +32,23 @@ class Appcoordinator: Coordinator {
         navigationController.pushViewController(viewController, animated: true)
     }
    
-    func showMain() {
-        
+    func showMain(login: String) {
+        let viewController = MainViewController.createObject()
+        let viewModel = MainViewModel()
+        viewModel.login = login
+        viewController.coordinator = self
+        viewController.viewModel = MainViewModel()
+        navigationController.viewControllers.removeAll()
+        navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    func showDetail() {
+        let viewController = DetailViewController.createObject()
+        let viewModel = DetailViewModel()
+        viewModel.model = UserData.userData
+        viewController.coordinator = self
+        viewController.viewModel = viewModel
+        navigationController.pushViewController(viewController, animated: true)
     }
     
 }

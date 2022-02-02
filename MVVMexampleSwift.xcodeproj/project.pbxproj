@@ -19,6 +19,10 @@
 		CB86AA7F27A9BE0900A1E221 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86AA7E27A9BE0900A1E221 /* AppCoordinator.swift */; };
 		CB86AA8227A9C0B800A1E221 /* StoryBoardControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86AA8127A9C0B800A1E221 /* StoryBoardControl.swift */; };
 		CB86AA8427A9CA1A00A1E221 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86AA8327A9CA1A00A1E221 /* MainViewController.swift */; };
+		CB86AA8627AB074300A1E221 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86AA8527AB074300A1E221 /* DetailViewController.swift */; };
+		CB86AA8827AB079700A1E221 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86AA8727AB079700A1E221 /* MainViewModel.swift */; };
+		CB86AA8A27AB07B900A1E221 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86AA8927AB07B900A1E221 /* DetailViewModel.swift */; };
+		CB86AA8C27AB083D00A1E221 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86AA8B27AB083D00A1E221 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		CB86AA7E27A9BE0900A1E221 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		CB86AA8127A9C0B800A1E221 /* StoryBoardControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoardControl.swift; sourceTree = "<group>"; };
 		CB86AA8327A9CA1A00A1E221 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CB86AA8527AB074300A1E221 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CB86AA8727AB079700A1E221 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		CB86AA8927AB07B900A1E221 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		CB86AA8B27AB083D00A1E221 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				CB0614A127A70950009EBCA6 /* User.swift */,
+				CB86AA8B27AB083D00A1E221 /* UserData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -91,6 +100,9 @@
 		CB06149E27A70840009EBCA6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CB06148D27A704D0009EBCA6 /* LoginViewController.swift */,
+				CB86AA8327A9CA1A00A1E221 /* MainViewController.swift */,
+				CB86AA8527AB074300A1E221 /* DetailViewController.swift */,
 				CB86AA8027A9C07600A1E221 /* ProtocolsViews */,
 				CB0614A027A708EC009EBCA6 /* Storyboards */,
 			);
@@ -103,6 +115,8 @@
 			children = (
 				CB0614A527A70BC2009EBCA6 /* Bindings */,
 				CB0614A327A70B43009EBCA6 /* LoginViewModel.swift */,
+				CB86AA8727AB079700A1E221 /* MainViewModel.swift */,
+				CB86AA8927AB07B900A1E221 /* DetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -111,8 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				CB06149427A704D2009EBCA6 /* LaunchScreen.storyboard */,
-				CB06148D27A704D0009EBCA6 /* LoginViewController.swift */,
-				CB86AA8327A9CA1A00A1E221 /* MainViewController.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -221,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB86AA8C27AB083D00A1E221 /* UserData.swift in Sources */,
 				CB0614A427A70B43009EBCA6 /* LoginViewModel.swift in Sources */,
 				CB0614A227A70950009EBCA6 /* User.swift in Sources */,
 				CB86AA7D27A9BC1600A1E221 /* Coordinator.swift in Sources */,
@@ -228,8 +241,11 @@
 				CB86AA8227A9C0B800A1E221 /* StoryBoardControl.swift in Sources */,
 				CB0614A727A70C19009EBCA6 /* Dynamic.swift in Sources */,
 				CB86AA8427A9CA1A00A1E221 /* MainViewController.swift in Sources */,
+				CB86AA8A27AB07B900A1E221 /* DetailViewModel.swift in Sources */,
+				CB86AA8627AB074300A1E221 /* DetailViewController.swift in Sources */,
 				CB06148A27A704D0009EBCA6 /* AppDelegate.swift in Sources */,
 				CB86AA7F27A9BE0900A1E221 /* AppCoordinator.swift in Sources */,
+				CB86AA8827AB079700A1E221 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,6 +33,10 @@ class LoginViewController: UIViewController, StoryBoardControl {
 
     @IBAction func loginButton(_ sender: Any) {
         viewModel?.userButtonPressd(login: (loginField.text ?? ""), password: (passwordField.text ?? ""))
+        if ((viewModel?.isLoggedIn) != nil) {
+            coordinator?.isLoggedIn = ((viewModel?.isLoggedIn) != nil)
+            coordinator?.showMain(login: loginField.text ?? "")
+        }
     }
 }
 

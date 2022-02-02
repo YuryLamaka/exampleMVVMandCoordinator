@@ -38,6 +38,7 @@ class Appcoordinator: Coordinator {
         viewModel.login = login
         viewController.coordinator = self
         viewController.viewModel = MainViewModel()
+        // block first controller after logIn
         navigationController.viewControllers.removeAll()
         navigationController.pushViewController(viewController, animated: true)
     }
